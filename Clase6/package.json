@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "name": "clase6",
+  "version": "1.0.0",
+  "main": "Servidores.js",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "scripts": {
+    "start": "nodemon Servidores.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
