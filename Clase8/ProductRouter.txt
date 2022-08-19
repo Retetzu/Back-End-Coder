@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Tinta",
+    "Price": "1600",
+    "id": 1
+  },
+  {
+    "title": "Maquina",
+    "Price": "1600",
+    "id": 2
+  },
+  {
+    "title": "Tinta Color",
+    "Price": "1600",
+    "id": 3
+  },
+  {
+    "title": "Guantes",
+    "Price": "1600",
+    "id": 4
+  },
+  {
+    "title": "Cartucho",
+    "Price": "1600",
+    "id": 5
+  }
+]
