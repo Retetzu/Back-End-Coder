@@ -7,6 +7,7 @@
   "main": "Router.js",
   "devDependencies": {},
   "scripts": {
+    "start": "node src/Router.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

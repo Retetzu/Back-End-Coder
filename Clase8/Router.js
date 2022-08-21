@@ -9,6 +9,7 @@ const listaProductos = []
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}))
+app.use(express.static('public'))
 
 app.get('/api/productos', (req, res) => {
     res.send(listaProductos)
@@ -20,11 +21,14 @@ app.get('/api/productos/:id', (req, res) => {
 })
 
 app.post('/api/productos', (req, res, next) => {
-    const { title, price } = req.body
-
+    if(req.body.title) {
+        res.status(400).send('some data missing')
+    }
     next()
-    listaProductos.push({ title, price })
-    res.send('El producto fue recibido')
+},
+    (req, res) => {
+        console.log(req.body);
+        res.send('El producto fue recibido')
 }) 
 
 app.put('/api/productos/:id', (req, res, next) => {
