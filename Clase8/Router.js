@@ -21,7 +21,8 @@ app.get('/api/productos/:id', (req, res) => {
 })
 
 app.post('/api/productos', (req, res, next) => {
-    if(req.body.title) {
+    const title = req.title
+    if (!title) {
         res.status(400).send('some data missing')
     }
     next()
